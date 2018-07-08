@@ -6,11 +6,9 @@ end
 
 def batch_badge_creator(attendees)
   attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-  badges = []
-  badges << attendees.each do
+  attendees.map do
     "Hello, my name is #{attendees}."
   end
-  return badges
 end
 
 def assign_rooms
